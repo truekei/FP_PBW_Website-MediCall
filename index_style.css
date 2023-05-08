@@ -1,0 +1,49 @@
+.carousel-item {
+    height: 700px;
+    margin-top: -200px;
+}
+
+.carousel .caption {
+    /* hasil copas */
+    color: white;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    right: 100px;
+    align-items: center;
+    z-index: 99;
+    text-align: center;
+}
+
+.carousel .display-4 {
+    font-weight: bold;
+}
+
+.carousel p {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.container .col-sm-6 .col-sm-3 {
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    text-align: center;
+    border-style: solid;
+    border-color: hotpink;
+    border-radius: 20px;
+    background-color:crimson;
+    height: 125px;
+    transition: .25s ease;
+}
+
+.container .col-sm-6 .col-sm-3:hover {
+    opacity: .5;
+}
+
+.container .col-sm-6 .col-sm-3 p {
+    padding-top: 20px;
+    color: white;
+    font-weight: 600;
+}
