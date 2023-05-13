@@ -6,9 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="index_style.css">
 
   <!-- FontAwesome CDN Link -->
@@ -16,178 +15,216 @@
 
   <title>MediCall - Tempat Konsultasi Termudah</title>
   <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
-<body style="background-color:#141414;">
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <a class="navbar-brand" href="">
-        <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        MediCall
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="">Beranda <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="layanan.html">Layanan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="notfound.html">Laporan</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Tentang Kami
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="notfound.html">FAQ</a>
-              <a class="dropdown-item" href="kontak.html">Kontak</a>
-              <a class="dropdown-item" href="notfound.html">Blog</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="notfound.html">Syarat & Ketentuan</a>
-              <a class="dropdown-item" href="notfound.html">Kebijakan Privasi</a>
-            </div>
-          </li>
-        </ul>
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light" style="box-shadow: #00000055 0px 4px 15px;">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-4" href="#">
+          <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+          MediCall
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container" style="width: 30px;"></div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="laporan.html">Laporan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="artikel.html">Artikel</a>
+            </li>
+          </ul>
+        </div>
+        <a href="notfound.html" type="button" class="btn btn-danger btn-md">Masuk</a>
       </div>
     </nav>
   </header>
 
-
-
-  <div id="homeSlides" class="carousel slide" data-ride="carousel">
+  <!-- Content -->
+  <div id="homeSlide" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="caption">
-      <h1 class="display-4 text-white">Tempat Konsultasi Kesehatan Termudah</h1>
+      <h1 class="display-4 text-white fw-bold">Tempat Konsultasi Kesehatan Termudah</h1>
       <br><br>
       <p class="lead text-white">Konsultasi semua keluhan mulai dari yang paling ringan hingga darurat bisa dilakukan di
         MediCall!</p>
       <a href="register.html" type="button" class="btn btn-danger btn-lg">Daftar Sekarang</a>
     </div>
-    <ol class="carousel-indicators">
-      <li data-target="#homeSlides" data-slide-to="0" class="active"></li>
-      <li data-target="#homeSlides" data-slide-to="1"></li>
-      <li data-target="#homeSlides" data-slide-to="2"></li>
-      <li data-target="#homeSlides" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="img/slides/slide1.jpg" alt="...">
+        <img src="img/index/slide1.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="img/slides/slide2.jpg" alt="...">
+        <img src="img/index/slide2.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="img/slides/slide3.jpg" alt="...">
+        <img src="img/index/slide3.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="img/slides/slide4.jpg" alt="...">
+        <img src="img/index/slide4.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <a class="carousel-control-prev" href="#homeSlides" role="button" data-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#homeSlide" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#homeSlides" role="button" data-slide="next">
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homeSlide" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
-  <br><br><br>
+  <br><br>
 
-  <div class="container">
+  <div class="container pb-5">
     <div class="row">
       <div class="col-sm-6">
-        <h3 class="text-white">Konsultasi Kesehatan</h3>
+        <h3>Konsultasi Kesehatan</h3>
         <div class="row">
-          <a class="col-sm-3" href="notfound.html">
+          <a class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2" href="notfound.html">
             <i class="fa-solid fa-stethoscope fa-2xl" style="color: white;"></i>
-            <p>Umum</p>
+            <p class="text-white fw-bold pt-4">Umum</p>
           </a>
-          <a class="col-sm-3" href="notfound.html">
+          <a class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2" href="notfound.html">
             <i class="fa-solid fa-eye fa-2xl" style="color: white;"></i>
-            <p>Mata</p>
+            <p class="text-white fw-bold pt-4">Mata</p>
           </a>
-          <a class="col-sm-3" href="notfound.html">
+          <a class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2" href="notfound.html">
             <i class="fa-solid fa-tooth fa-2xl" style="color: white;"></i>
-            <p>Gigi</p>
+            <p class="text-white fw-bold pt-4">Gigi</p>
           </a>
-          <a class="col-sm-3" href="notfound.html">
+          <a class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2" href="notfound.html">
             <i class="fa-solid fa-brain fa-2xl" style="color: white;"></i>
-            <p>Saraf</p>
+            <p class="text-white fw-bold pt-4">Saraf</p>
           </a>
-          <a class="col-sm-3" href="notfound.html">
+          <a class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2" href="notfound.html">
             <i class="fa-solid fa-heart-pulse fa-2xl" style="color: white;"></i>
-            <p>Jantung</p>
+            <p  class="text-white fw-bold pt-4">Jantung</p>
           </a>
-          <a class="col-sm-3" href="notfound.html">
+          <a class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2" href="notfound.html">
             <i class="fa-solid fa-lungs fa-2xl" style="color: white;"></i>
-            <p>Paru-Paru</p>
+            <p  class="text-white fw-bold pt-4">Paru-Paru</p>
           </a>
-          <a class="col-sm-3" href="notfound.html">
+          <a class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2" href="notfound.html">
+            <i class="fa-solid fa-hand-dots fa-2xl" style="color: white;"></i>
+            <p  class="text-white fw-bold pt-4">Kulit</p>
+          </a>
+          <a class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2" href="notfound.html">
             <i class="fa-solid fa-virus-covid fa-2xl" style="color: white;"></i>
-            <p>Covid-19</p>
-          </a>
-          <a class="col-sm-3" href="notfound.html">
-            <i class="fa-solid fa-truck-medical fa-2xl" style="color: white;"></i>
-            <p>Darurat</p>
+            <p  class="text-white fw-bold pt-4">Covid-19</p>
           </a>
         </div>
       </div>
       <div class="col-sm-6">
-        <h3 class="text-white">Layanan Lainnya</h3>
+        <h3>Layanan Lainnya</h3>
         <div class="row">
-          <a href="notfound.html" class="col-sm-3">
+          <a href="notfound.html" class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2">
             <i class="fa-solid fa-pills fa-2xl" style="color: white;"></i>
-            <p>Info Obat</p>
+            <p  class="text-white fw-bold pt-4">Informasi Obat</p>
           </a>
-          <a href="notfound.html" class="col-sm-3">
+          <a href="notfound.html" class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2">
             <i class="fa-solid fa-weight-scale fa-2xl" style="color: white;"></i>
-            <p>Hitung BMI</p>
+            <p  class="text-white fw-bold pt-4">Hitung BMI</p>
           </a>
-          <a href="notfound.html" class="col-sm-3">
-            <i class="fa-solid fa-book-medical fa-2xl" style="color: white;"></i>
-            <p>Jurnal Kesehatan</p>
+          <a href="notfound.html" class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2">
+            <i class="fa-solid fa-comments fa-2xl" style="color: white;"></i>
+            <p  class="text-white fw-bold pt-4">Tanya Dokter</p>
           </a>
-          <a href="notfound.html" class="col-sm-3">
+          <a href="notfound.html" class="item-menu text-center col-sm-5 col-lg-3 mx-2 mt-2 pt-4 px-2">
             <i class="fa-solid fa-headset fa-2xl" style="color: white;"></i>
-            <p>Customer Service</p>
+            <p  class="text-white fw-bold pt-4">Customer Service</p>
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="container pb-5">
+    <h3 class="pb-2">Artikel Terkini</h3>
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
+      <div class="col">
+        <a href="notfound.html" style="text-decoration: none;">
+          <div class="card h-100">
+            <img src="img/index/art1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title fw-bold">10 Jenis Olahraga untuk Menjalani Hidup Sehat</p>
+              <p class="card-text">Seiring dengan bertambahnya usia, upaya menjaga tubuh tetap bugar dengan olahraga mesti tepat agar tujuan tercapai.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="notfound.html" style="text-decoration: none;">
+          <div class="card h-100">
+            <img src="img/index/art2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title fw-bold">Lakukan 5 Hal Ini Jika Kamu Terkena Flu</p>
+              <p class="card-text">Flu atau influenza merupakan penyakit yang disebabkan oleh infeksi virus yang dapat menyerang hidung, tenggorokan, dan paru-paru. Kondisi ini sangat umum terjadi di musim pancaroba.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="notfound.html" style="text-decoration: none;">
+          <div class="card h-100">
+            <img src="img/index/art3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title fw-bold">Tips Diet Sehat dan Bugar Menurut Dokter Gizi</p>
+              <p class="card-text">Diet yang sehat dan sesuai pada kondisi tubuh berdampak positif pada kebugaran tubuh. Selain itu, kita juga terhindar dari risiko terkena penyakit, apabila dilakukan dengan benar.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="notfound.html" style="text-decoration: none;">
+          <div class="card h-100">
+            <img src="img/index/art4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title fw-bold">Rekomendasi Masker untuk Membantu Memutihkan Wajah</p>
+              <p class="card-text">Ritual malam sebelum tidur bagi wanita identik dengan membersihkan wajah dan penggunaan skincare. Dua hal ini penting dilakukan untuk menjaga wajah tetap sehat dan cerah.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <footer class="text-white pt-3 pb-4" style="background-color: #111111;">
-    <div class="container text-center text-md-left">
-      <div class="row text-center text-md-left">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
         <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
           <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top mb-4" alt="">
           MediCall
-          <p class="font-weight-bold">PT Medicall Indonesia</p>
-          <p>Jalan P.B. Sudirman, Dangin Puri Klod, Kec. Denpasar Barat, Kota Denpasar, Bali 80234</p>
+          <p class="fw-bold">PT Medicall Indonesia</p>
+          <p>Jalan Merdeka No.1, Bali, Indonesia 80808</p>
+          <p><i class="fa-solid fa-envelope fa-1xl" style="color: white;"></i> : help@medicall.com |
+            <i class="fa-brands fa-whatsapp fa-1xl" style="color: white;"></i> : 0812-3456-7890</p>
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">Informasi</h5>
+          <h5 class="text-uppercase mb-4 fw-bold">Informasi</h5>
           <p>
-            <a href="notfound.html" class="text-white" style="text-decoration: none;">Ketentuan Pengguna</a>
+            <a href="about.html" class="text-white" style="text-decoration: none;">Tentang Kami</a>
+          </p>
+          <p>
+            <a href="notfound.html" class="text-white" style="text-decoration: none;">FAQ</a>
           </p>
           <p>
             <a href="notfound.html" class="text-white" style="text-decoration: none;">Kebijakan Privasi</a>
           </p>
           <p>
-            <a href="notfound.html" class="text-white" style="text-decoration: none;">Kebijakan Sponsor</a>
-          </p>
-          <p>
-            <a href="notfound.html" class="text-white" style="text-decoration: none;">Komunitas</a>
+            <a href="notfound.html" class="text-white" style="text-decoration: none;">Syarat dan Ketentuan</a>
           </p>
         </div>
         <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
@@ -219,17 +256,6 @@
     </div>
   </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

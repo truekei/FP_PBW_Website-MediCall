@@ -9,7 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("img/regispage.jpg");
+    background-image: url("img/registration/background.jpg");
     background-size: cover;
 }
 
